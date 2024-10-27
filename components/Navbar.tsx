@@ -1,5 +1,4 @@
 import { auth, signIn, signOut } from "@/auth";
-import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -55,7 +54,7 @@ const Navbar = async () => {
         </div>
       </nav>
 
-      <MobileNav user={session?.user} />
+      <MobileNav user={session?.user as { id: string; name: string }} />
 
       {/* <div className="flex items-center gap-5 text-black">
           {session && session?.user ? (

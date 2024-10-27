@@ -2,7 +2,6 @@ import SearchForm from "@/components/SearchForm";
 import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 import { sanityFetch, SanityLive } from "@/lib/live";
 import { STARTUPS_QUERY } from "@/lib/queries";
-import { client } from "@/sanity/lib/client";
 
 export default async function Home({
   searchParams,

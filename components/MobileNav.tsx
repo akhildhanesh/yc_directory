@@ -6,7 +6,12 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { loginGithub, logoutGithub } from "@/app/actions";
 
-const MobileNav = ({ user }) => {
+const MobileNav = ({ user }: {
+    user: {
+        id: string,
+        name: string
+    }
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
